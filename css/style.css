@@ -1,0 +1,58 @@
+body{
+    transition-property: all ;
+    transform: matrix(10s);
+    transition: all 10s ease-out;
+}
+
+.modal{
+    border: 1px solid black;
+    display: none;
+    width: 500px;
+    height: 200px;
+    margin-left: 500px;
+    border: none;
+    box-shadow: 1px 2px 2px 4px rgb(222, 217, 217);
+}
+
+.btn__iks{
+    width: 50px;
+    height: 50px;
+    margin-left: 450px;
+    /* overflow: hidden; */
+    font-style: initial;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+p{  
+    width: 400px;
+    height: 90px;
+    margin-left: 19px;
+}
+
+.btnn{
+    margin-left: 300px;
+    
+}
+
+.btn__allow{
+    width: 70px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(13, 231, 13);
+}
+
+.btn__block{
+    margin-left: 10px;
+    width: 70px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn__open{
+    display: block;
+}
