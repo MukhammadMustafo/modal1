@@ -1,21 +1,32 @@
+var elClose = document.querySelector('.close');
+var elOpen = document.querySelector('.open');
 var elModal = document.querySelector('.modal');
-var elIks = document.querySelector('.btn__iks');
-var elAllow = document.querySelector('.btn__allow');
-var elBlock = document.querySelector('.btn__block');
-var elOpen = document.querySelector('.btn__open');
+var elBtn = document.querySelector('.btn_close');
+var elSave = document.querySelector('.save');
+var elShadow = document.querySelector('.shadow');
 
-elOpen.addEventListener('click', function () {
-    elModal.classList.add('btn__open')
+elOpen.addEventListener('click', ()=>{
+    elModal.classList.add('modal_open')
+    elShadow.classList.add('shadow_open')
+    document.querySelector('body').style.overflow = 'hidden'
 })
-
-elIks.addEventListener('click', function () {
-    elModal.classList.remove('btn__open')
+elClose.addEventListener('click', ()=>{
+    elModal.classList.remove('modal_open')
+    elShadow.classList.remove('shadow_open')
+    document.querySelector('body').style.overflow = 'auto'
 })
-
-elAllow.addEventListener('click', function () {
-    elModal.classList.remove('btn__open')
+elBtn.addEventListener('click', ()=>{
+    elModal.classList.remove('modal_open')
+    elShadow.classList.remove('shadow_open')
+    document.querySelector('body').style.overflow = 'auto'
 })
-
-elBlock.addEventListener('click', function () {
-    elModal.classList.remove('btn__open')
+elSave.addEventListener('click', ()=>{
+    elModal.classList.remove('modal_open')
+    elShadow.classList.remove('shadow_open')
+    document.querySelector('body').style.overflow = 'auto'
+})
+elShadow.addEventListener('click', ()=>{
+    elModal.classList.remove('modal_open')
+    elShadow.classList.remove('shadow_open')
+    document.querySelector('body').style.overflow = 'auto'
 })
